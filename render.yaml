@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: streamlit-app
+    name: bigdata-project
     env: python
     buildCommand: |
       apt-get update && apt-get install -y default-jdk && pip install -r requirements.txt
-    startCommand: |
-      export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 && streamlit run main.py --server.port $PORT
+    startCommand: streamlit run main.py --server.port $PORT
