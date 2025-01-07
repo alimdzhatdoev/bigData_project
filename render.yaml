@@ -3,7 +3,7 @@ services:
     name: bigdata-project
     env: python
     buildCommand: |
-      apt-get update && apt-get install -y default-jdk && pip install -r requirements.txt
+      apt-get update && apt-get install -y default-jdk && export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" && export PATH="/usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH" && pip install -r requirements.txt
     startCommand: streamlit run main.py --server.port $PORT
     envVars:
       JAVA_HOME: "/usr/lib/jvm/java-11-openjdk-amd64"
