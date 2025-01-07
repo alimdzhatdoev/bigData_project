@@ -5,8 +5,8 @@
 
 import os
 
-os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-11-openjdk-amd64"
-os.environ["PATH"] = "/usr/lib/jvm/java-11-openjdk-amd64/bin:" + os.environ["PATH"]
+# os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-11-openjdk-amd64"
+# os.environ["PATH"] = "/usr/lib/jvm/java-11-openjdk-amd64/bin:" + os.environ["PATH"]
 
 import pandas as pd
 import matplotlib.pyplot as plt
