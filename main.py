@@ -1,5 +1,7 @@
 # Для установки всех зависимостей: pip install pandas matplotlib streamlit psutil pyspark
 # Запуск: streamlit run main.py
+# sudo apt update
+# sudo apt install default-jdk
 
 import os
 import pandas as pd
